@@ -1,0 +1,180 @@
+{{-- warehouse --}}
+              @if (auth()->user()->role == 'super_admin' || auth()->user()->role == 'production')
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-warehouse"></i> <span>WMS</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="layout-default.html">Physical Check</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">Warehousing</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">Warehousing Check</a></li>    
+                  <li><a class="nav-link" href="layout-transparent.html">Location Management</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">Delivery Check</a></li>    
+                  <li><a class="nav-link" href="layout-transparent.html">Stock Closing</a></li>
+                 
+                </ul>
+              </li>
+              @endif
+              {{-- logistics & Delivery --}}
+              @if (auth()->user()->role == 'super_admin' || auth()->user()->role == 'logistics')
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-shipping-fast"></i> <span>Logistics</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="layout-default.html">Check Dellivery Order</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">Logistics Progress</a></li>
+                  
+                </ul>
+              </li>
+              @endif
+              {{-- sales --}}
+              @if (auth()->user()->role == 'super_admin' || auth()->user()->role == 'sales')
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-code-branch"></i> <span>Sales Branch Shop</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="layout-default.html">Sales Entry</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">Payment Collection</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">Payment of Sales</a></li>    
+                </ul>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-american-sign-language-interpreting"></i> <span>Sales Consignment</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="layout-default.html">Sales Entry</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">- Sales Entry (Blank)</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">- Sales Entry (Grid)</a></li>  
+                  <li><a class="nav-link" href="layout-transparent.html">- Payment Collection</a></li>   
+                </ul>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-money-bill-wave"></i> <span>Sales Direct Sales</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="layout-default.html">Sales Entry</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">Billing</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">Payment Colletion</a></li>    
+                  <li><a class="nav-link" href="layout-transparent.html">in Prc</a></li>    
+                  <li><a class="nav-link" href="layout-transparent.html">Paid off</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">Achivement Rate </a></li>    
+                  <li><a class="nav-link" href="layout-transparent.html">Rate</a></li>    
+                  <li><a class="nav-link" href="layout-transparent.html">Paid off</a></li>        
+                  <li><a class="nav-link" href="layout-transparent.html">Receivable Cases</a></li>    
+                </ul>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-male"></i> <span>Customer</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="layout-default.html">Customer</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">Distributor</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">Mailing List</a></li>    
+                  <li><a class="nav-link" href="layout-transparent.html">News Laters</a></li>
+
+                </ul>
+              </li>
+              @endif
+                 <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-hand-holding-usd"></i> <span>Finance</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="layout-default.html">General expenses</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">+ Disbursements</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">Purchase Cost</a></li>    
+                  <li><a class="nav-link" href="layout-transparent.html">General Income</a></li>    
+                  <li><a class="nav-link" href="layout-transparent.html">Invoice</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">Bill of Tax</a></li>        
+                  <li><a class="nav-link" href="layout-transparent.html">Income Statement</a></li>    
+                  <li><a class="nav-link" href="layout-transparent.html">Personal Accounts</a></li>    
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-file-alt"></i> <span>Reports</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="layout-default.html">Customer</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">HR</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">Purchasing</a></li>   
+                  <li><a class="nav-link" href="layout-transparent.html">Inventory</a></li>    
+                  <li><a class="nav-link" href="layout-transparent.html">Shipment</a></li>    
+                  <li><a class="nav-link" href="layout-transparent.html">Marketing</a></li>    
+                  <li><a class="nav-link" href="layout-transparent.html">Sales Income</a></li>    
+                  <li><a class="nav-link" href="layout-transparent.html">Asset</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">Finance</a></li>         
+                </ul>
+              </li>
+               <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-comments-dollar"></i> <span>Chat Room</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="layout-default.html">Personal Chat</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">Group Chat</a></li>
+                 
+                </ul>
+              </li>
+              
+              <li><a class="nav-link" href="bootstrap-buttons.html">Branch Shop</a></li>
+                  <li><a class="nav-link" href="bootstrap-card.html">Consignment Store</a></li>
+                  <li><a class="nav-link" href="bootstrap-carousel.html">Stock Update Online</a></li>
+                  <li><a class="nav-link" href="bootstrap-collapse.html">Billing</a></li>
+                  <li><a class="nav-link" href="bootstrap-dropdown.html">Payment Collection</a></li>
+                  <li><a class="nav-link" href="bootstrap-form.html">Payment</a></li>
+                  <li><a class="nav-link" href="bootstrap-list-group.html">Payment Confirmation</a></li>
+                  <li><a class="nav-link" href="bootstrap-media-object.html">Stock Output</a></li>
+                  <li><a class="nav-link" href="bootstrap-modal.html">Return</a></li>
+                  <li><a class="nav-link" href="bootstrap-nav.html">Billing Management</a></li>
+                  <li><a class="nav-link" href="bootstrap-navbar.html">Product Pick-up</a></li>
+                  <li><a class="nav-link" href="bootstrap-pagination.html">Stock Opname</a></li>
+                  <li><a class="nav-link" href="bootstrap-popover.html">Date Reset</a></li>
+                  <li><a class="nav-link" href="bootstrap-progress.html">Stock Closing</a></li>
+                  <li><a class="nav-link" href="bootstrap-table.html">Product Package</a></li>
+                  <li><a class="nav-link" href="bootstrap-tooltip.html">Product Prices</a></li>
+                  <li><a class="nav-link" href="bootstrap-typography.html">Installment</a></li>
+                  <li><a class="nav-link" href="bootstrap-typography.html">Shipment Charges</a></li>
+                  <li><a class="nav-link" href="bootstrap-typography.html">Product Option</a></li>
+                  <li><a class="nav-link" href="bootstrap-typography.html">Product Unit</a></li>
+
+                    <li><a class="nav-link" href="layout-transparent.html">Contents Editor</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">Banner Files</a></li>    
+                  <li><a class="nav-link" href="layout-transparent.html">Banner Display</a></li>    
+                  <li><a class="nav-link" href="layout-transparent.html">Pages stuff</a></li>    
+                  <li><a class="nav-link" href="layout-transparent.html">Website Layout</a></li>    
+
+                  <li><a class="nav-link" href="components-tab.html">Service Category</a></li>
+                  <li><a class="nav-link" href="components-table.html">Consignment Group</a></li>
+                  <li><a class="nav-link" href="components-user.html">Regions</a></li>
+                  <li><a class="nav-link beep beep-sidebar" href="components-wizard.html">Shops</a></li>
+                  <li><a class="nav-link beep beep-sidebar" href="components-wizard.html">Consignment shop</a></li>
+                  <li><a class="nav-link beep beep-sidebar" href="components-wizard.html">by Customer</a></li>
+                  <li><a class="nav-link beep beep-sidebar" href="components-wizard.html">Branch Shop</a></li>
+                  <li><a class="nav-link beep beep-sidebar" href="components-wizard.html">Online Shop</a></li>
+                  <li><a class="nav-link" href="components-gallery.html">Shop Manager</a></li>
+                  <li><a class="nav-link" href="components-gallery.html">- Consignment Store</a></li>
+                  <li><a class="nav-link" href="components-gallery.html">- Branch Shop</a></li>
+                  <li><a class="nav-link" href="forms-advanced-form.html">Discount Rates</a></li>
+                  <li><a class="nav-link" href="forms-editor.html">Vouchers</a></li>
+                  <li><a class="nav-link" href="forms-validation.html">Special pricing</a></li>
+                  <li><a class="nav-link" href="forms-advanced-form.html">Initial Cash</a></li>
+                  <li><a class="nav-link" href="forms-editor.html">Bank Accounts</a></li>
+                  <li><a class="nav-link" href="forms-validation.html">Credits Cards</a></li>
+                  <li><a class="nav-link" href="forms-advanced-form.html">Insurance Agents</a></li>
+                  <li><a class="nav-link" href="forms-editor.html">Cost</a></li>
+                  <li><a class="nav-link" href="forms-validation.html">Budget</a></li>
+                  <li><a class="nav-link" href="forms-editor.html">Training Category</a></li>
+                  <li><a class="nav-link" href="forms-validation.html">Training Course</a></li>
+                  <li><a class="nav-link" href="forms-editor.html">Ports</a></li>
+                  <li><a class="nav-link" href="forms-validation.html">Works Shift</a></li>
+                  <li><a class="nav-link" href="forms-editor.html">Job Class</a></li>
+                  <li><a class="nav-link" href="forms-validation.html">Salarry Class</a></li>
+                  <li><a class="nav-link" href="forms-editor.html">Yearly Payroll</a></li>
+                  <li><a class="nav-link" href="forms-validation.html">Incentive</a></li>
+                  <li><a class="nav-link" href="forms-editor.html">Currency</a></li>
+                  <li><a class="nav-link" href="forms-validation.html">Foreign Exchanges</a></li>
+                  <li><a class="nav-link" href="forms-editor.html">Accounting Category</a></li>
+                  <li><a class="nav-link" href="forms-validation.html">Accounting Codes</a></li>
+                  <li><a class="nav-link" href="forms-validation.html">Corporates</a></li>
+
+                  <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-money-check"></i> <span>Purchase Request</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="layout-default.html">Product Search</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">Purchase Request</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">Purchase Request</a></li>    
+                </ul>
+              </li>
+               <li><a class="nav-link" href="layout-default.html">Product Search</a></li>
+                  <li><a class="nav-link" href="layout-transparent.html">+ Material</a></li>
